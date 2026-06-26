@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# dependencies (none are needed to run this site)
+node_modules/
+
+# original Claude-design source + scratch (kept locally, not shipped)
+.design-source/

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cafécito · borrow a better morning</title>
+  <meta name="description" content="Pick a famously productive person, like Beethoven or Maya Angelou, and clone their documented morning ritual into your Google Calendar. A fun little project.">
+  <meta name="theme-color" content="#e9b23a">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://cafecito.io/">
+
+  <!-- social cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cafécito · borrow a better morning">
+  <meta property="og:description" content="Clone a famously productive person's documented morning ritual into your Google Calendar.">
+  <meta property="og:image" content="https://cafecito.io/og.jpg">
+  <meta property="og:image:alt" content="Cafécito · wake like a legend">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cafécito · borrow a better morning">
+  <meta name="twitter:description" content="Clone a famously productive person's documented morning ritual into your Google Calendar.">
+  <meta name="twitter:image" content="https://cafecito.io/og.jpg">
+  <meta name="twitter:image:alt" content="Cafécito · wake like a legend">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- preload above-the-fold assets -->
+  <link rel="preload" href="assets/risers/franklin.jpg" as="image">
+  <link rel="preload" href="assets/fonts/bagel-fat-one-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/anton-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-mono-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Cafécito",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Any",
+    "description": "Clone a famously productive person's documented morning ritual into your Google Calendar.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "isAccessibleForFree": true
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#lineup">Skip to the line-up</a>
+
+  <!-- duotone filters: each riser portrait is rendered two-tone via one of these -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0">
+    <filter id="duo-sepia" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.20 0.96"/><feFuncG type="table" tableValues="0.11 0.90"/><feFuncB type="table" tableValues="0.07 0.78"/></feComponentTransfer></filter>
+    <filter id="duo-orange" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.16 0.94"/><feFuncG type="table" tableValues="0.10 0.40"/><feFuncB type="table" tableValues="0.07 0.16"/></feComponentTransfer></filter>
+    <filter id="duo-teal" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.04 0.92"/><feFuncG type="table" tableValues="0.18 0.97"/><feFuncB type="table" tableValues="0.16 0.84"/></feComponentTransfer></filter>
+    <filter id="duo-plum" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.22 0.97"/><feFuncG type="table" tableValues="0.08 0.86"/><feFuncB type="table" tableValues="0.24 0.92"/></feComponentTransfer></filter>
+  </svg>
+
+  <div class="page" id="page">
+
+    <!-- marquee bar -->
+    <div class="bar">
+      <span class="star" aria-hidden="true">★</span>&ensp;wake like a legend&ensp;·&ensp;<b><span data-riser-count>54</span> documented morning rituals</b>&ensp;·&ensp;syncs to google calendar&ensp;<span class="star" aria-hidden="true">★</span>
+    </div>
+
+    <!-- nav -->
+    <header class="shell nav">
+      <a class="brand" href="#top" aria-label="Cafécito home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="23" height="23" fill="none">
+            <path d="M5.4 10.4h9v3.6a4.5 4.5 0 0 1-4.5 4.5h0a4.5 4.5 0 0 1-4.5-4.5z" fill="#e8e6e0"/>
+            <path d="M14.4 11.4h1.7a2.6 2.6 0 0 1 0 5.2h-1.1" stroke="#e8e6e0" stroke-width="2" fill="none"/>
+            <path d="M8 3.4c1 1 1 2.1 0 3.1M11.4 3.4c1 1 1 2.1 0 3.1" stroke="#e8e6e0" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">Cafécito</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#lineup">Risers</a>
+        <a href="#how">Ritual</a>
+        <button class="nav__cta" type="button" data-plan-hero>Pour me in →</button>
+      </nav>
+    </header>
+
+    <main id="top">
+
+      <!-- hero -->
+      <section class="shell hero" id="hero" aria-label="Featured riser">
+        <span class="hero__sparkle" aria-hidden="true">✦</span>
+        <div class="hero__copy">
+          <p class="eyebrow">// your alarm, with a pedigree</p>
+          <h1 class="hero__title">
+            <span class="l1">Borrow</span><br>
+            <span class="l2">a&nbsp;better</span><br>
+            <span class="l3">morning.</span>
+          </h1>
+          <p class="hero__lede">Pick a famously productive human, living or long gone. Cafécito clones their documented morning ritual straight into your Google Calendar. Their wake hour. Their coffee. Their first glorious hour. You just get up.</p>
+          <div class="hero__actions">
+            <button class="btn btn--orange" type="button" data-plan-hero>Plan this morning</button>
+            <a class="link-underline" href="#lineup">Meet the line-up</a>
+          </div>
+          <p class="hero__assure">✓ one-tap add to google calendar</p>
+        </div>
+
+        <div class="hero__photo">
+          <div class="frame" id="hero-frame">
+            <img class="frame__img" id="hero-img" alt="" width="449" height="540">
+            <span class="halftone" aria-hidden="true"></span>
+          </div>
+          <div class="badge-coin" aria-hidden="true">
+            <span class="badge-coin__time" id="hero-badge-time">5AM</span>
+            <span class="badge-coin__sub">club</span>
+          </div>
+          <div class="alarm-chit">
+            <div class="alarm-chit__label">alarm set for</div>
+            <div class="alarm-chit__time" id="chit-time">5:00 AM</div>
+            <div class="alarm-chit__name" id="chit-name">Benjamin Franklin</div>
+            <div class="alarm-chit__ritual" id="chit-ritual"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- rotator -->
+      <div class="shell rotator" role="group" aria-label="Cycle featured riser">
+        <button class="rotator__btn" id="rotator-prev" type="button" aria-label="Previous riser">‹</button>
+        <div class="rotator__label" id="rotator-counter" aria-live="polite">01 / 54</div>
+        <button class="rotator__btn" id="rotator-next" type="button" aria-label="Next riser">›</button>
+      </div>
+
+      <!-- stats -->
+      <section class="stats" aria-label="By the numbers">
+        <div class="stats__scallop" aria-hidden="true"></div>
+        <div class="stats__body">
+          <div class="stats__grid">
+            <div class="stat"><div class="stat__num" id="stat-count">54</div><div class="stat__label">documented rituals</div></div>
+            <div class="stat stat--mid"><div class="stat__num" id="stat-earliest">1:00</div><div class="stat__label">earliest riser on file</div></div>
+            <div class="stat"><div class="stat__num">60</div><div class="stat__label">beans, counted by Ludwig</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how it works -->
+      <section class="shell how" id="how">
+        <div class="section-head">
+          <p class="eyebrow">// three sips to a better dawn</p>
+          <h2 class="section-head__title">How it brews</h2>
+        </div>
+        <div class="how__grid">
+          <div class="step-card step-card--1">
+            <div class="step-num step-num--1" aria-hidden="true">1</div>
+            <h3 class="step-card__title">Pick your person</h3>
+            <p>Founder, poet, athlete, composer. Dozens of sourced routines. Read the real morning before you commit.</p>
+          </div>
+          <div class="step-card step-card--2">
+            <div class="step-num step-num--2" aria-hidden="true">2</div>
+            <h3 class="step-card__title">Sync the dawn</h3>
+            <p>We turn their ritual into timed Google Calendar events: coffee, pages, training, daylight. Pick your wake hour; the rest shifts to match.</p>
+          </div>
+          <div class="step-card step-card--3">
+            <div class="step-num step-num--3" aria-hidden="true">3</div>
+            <h3 class="step-card__title">Rise &amp; repeat</h3>
+            <p>Wake into their rhythm with calendar nudges. Keep what works, swap idols any night.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- line-up -->
+      <section class="shell lineup" id="lineup" aria-label="The line-up of risers">
+        <div class="lineup__head">
+          <h2 class="lineup__title">The line-up</h2>
+          <p class="lineup__hint">tap a card to feature it up top ↗</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search">
+            <span class="search__icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            </span>
+            <label class="sr-only" for="riser-search">Search risers by name, role, or ritual</label>
+            <input id="riser-search" type="search" placeholder="Search a name or a craft…" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="chips" id="club-chips" role="group" aria-label="Filter by wake hour"></div>
+          <span class="sr-only" id="result-count" role="status" aria-live="polite"></span>
+        </div>
+
+        <div class="grid" id="grid"></div>
+
+        <div class="loadmore" id="loadmore" hidden>
+          <button class="btn" id="loadmore-btn" type="button">Load more risers</button>
+        </div>
+      </section>
+
+      <!-- quote -->
+      <section class="quote" aria-label="Field note">
+        <div class="quote__inner">
+          <div class="quote__mark" aria-hidden="true">“</div>
+          <blockquote class="quote__text">Beethoven counted exactly sixty coffee beans per cup, every single morning. Cafécito just puts the counting on your calendar.</blockquote>
+          <p class="quote__attr">from the Cafécito field notes</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="eyebrow footer__eyebrow">// your first ritual is on the house</p>
+        <h2 class="footer__title"><span class="l1">Set tomorrow’s</span><br><span class="l2">alarm tonight.</span></h2>
+        <div class="footer__actions">
+          <a class="btn" href="#lineup">Pick your riser ↑</a>
+        </div>
+        <p class="footer__meta">works with google calendar · a fun claude project by <a href="https://bsky.app/profile/victor.dev" target="_blank" rel="noopener">victor</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- planner modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__dialog">
+      <div class="modal__head">
+        <div class="modal__brand" id="modal-title">
+          <span class="modal__gmark" aria-hidden="true">G</span>
+          Google Calendar · Morning Planner
+        </div>
+        <button class="modal__close" id="modal-close" type="button" aria-label="Close planner">×</button>
+      </div>
+      <div id="planner-mount"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="noscript">
+      Cafécito needs JavaScript to brew your morning and build the calendar files. The idea is simple: pick a famously productive person and borrow their documented morning ritual.
+    </div>
+  </noscript>
+
+  <script src="risers.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
